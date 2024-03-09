@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "1221",
+    "database": "crud",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "1221",
+    "database": "test_crud",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "1221",
+    "database": "prod_crud",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
