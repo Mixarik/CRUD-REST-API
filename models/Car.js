@@ -1,12 +1,12 @@
-const {Sequelize, DataTypes, UUIDV4} = require('sequelize');
+const {Sequelize,DataTypes} = require('sequelize');
+
 const sequelize = new Sequelize('crud', 'postgres', '1221', {
    host: 'localhost',
    dialect: 'postgres'
 });
 
 const Car = sequelize.define(
-  'Car',
-  {
+  'Car', {
      car_id: {
         primaryKey: true,
         autoIncrement: true,

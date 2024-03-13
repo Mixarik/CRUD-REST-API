@@ -1,8 +1,10 @@
-const Sequelize = require('sequelize');
+const {Sequelize} = require('sequelize')
 const env = require('./env.config.js');
 const {createNamespace} = require('cls-hooked');
 
 const namespace = createNamespace('ns');
+
+Sequelize.useCLS(namespace);
 
 const db = new Sequelize({
    dialect: env.DB_TYPE,
@@ -15,7 +17,6 @@ const db = new Sequelize({
       timestamps: false
    }
 });
-Sequelize.useCLS(namespace);
 
 const openConnection = async () => {
    try {

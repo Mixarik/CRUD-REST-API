@@ -1,9 +1,7 @@
-const db = require('../db');
 const {Car} = require('../models/Car');
 
 class carController {
    async createCar(req, res) {
-
       try {
          const carData = req.body;
          const newCar = await Car.create(carData);
